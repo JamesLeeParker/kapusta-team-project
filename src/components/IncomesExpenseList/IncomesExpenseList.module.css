@@ -1,0 +1,140 @@
+.header {
+  display: none;
+  visibility: hidden;
+}
+
+.list {
+  width: 100%;
+}
+
+.date {
+  display: block;
+  width: 84px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.description {
+  display: block;
+  width: 124px;
+  text-align: center;
+  margin-right: 80px;
+}
+
+.category {
+  display: block;
+  width: 136px;
+  text-align: start;
+  margin-right: 20px;
+}
+
+.amount {
+  display: block;
+  width: 104px;
+  text-align: start;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    visibility: visible;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: var(--bg-modal-one-colour);
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    letter-spacing: 0.02;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .list {
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 60px rgba(219, 221, 226, 0.2);
+    border-bottom: 2px solid var(--bg-modal-one-colour);
+  }
+  .transactionsList {
+    background-color: var(--white-color);
+    height: 346px;
+
+    border-left: 2px solid var(--bg-modal-two-colour);
+    border-right: 2px solid var(--bg-modal-two-colour);
+    overflow-y: scroll;
+  }
+  .transactionsList::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .transactionsList::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+  }
+
+  .ulPlaceholder {
+    height: 346px;
+    border-left: 2px solid var(--bg-modal-two-colour);
+    border-right: 2px solid var(--bg-modal-two-colour);
+    border-bottom: 2px solid var(--bg-modal-two-colour);
+  }
+
+  .date {
+    width: 66px;
+    margin-left: 0;
+    margin-right: 37px;
+  }
+
+  .description {
+    width: 98px;
+    margin-right: 70px;
+    text-align: start;
+  }
+
+  .category {
+    width: 124px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .amount {
+    width: 96px;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .list {
+    width: 760px;
+  }
+
+  .date {
+    width: 84px;
+    margin-left: 0;
+  }
+
+  .description {
+    margin-right: 80px;
+  }
+
+  .category {
+    width: 172px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .amount {
+    width: 104px;
+    text-align: end;
+  }
+}

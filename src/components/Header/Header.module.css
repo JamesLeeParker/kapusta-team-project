@@ -1,0 +1,63 @@
+.container {
+  height: 56px;
+  background-color: #ffffff;
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: var(--text-color-four);
+}
+.userLogo__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--bg-modal-two-colour);
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+.userLogo {
+  font-weight: 700;
+  color: var(--text-color-four);
+  margin-right: -1px;
+}
+.user__name {
+  font-size: 12px;
+  line-height: 1.67;
+  margin-right: 20px;
+}
+.line {
+  width: 0;
+  height: 36px;
+  border-left: 1px solid #e0e5eb;
+  background-color: var(--header-vertical-line-bg-color);
+  margin-right: 20px;
+}
+.logout {
+  text-decoration-line: underline;
+  cursor: pointer;
+  /* width: 66px; */
+}
+.logout:hover,
+.logout:focus {
+  color: var(--accent-color);
+}
+.logout__picture {
+  margin-left: 5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1280px) {
+  .logout {
+    width: 66px;
+    margin-right: 18px;
+  }
+}

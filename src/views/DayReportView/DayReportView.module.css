@@ -1,0 +1,234 @@
+.section {
+  display: flex;
+}
+.buttonsHolder {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.mainWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: transparent;
+}
+
+.shadowBigScreen {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  width: 100%;
+
+  border-top-right-radius: 20px;
+
+  background-color: transparent;
+}
+.shadowSmallScreen {
+  display: flex;
+  min-height: 172px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonsHolder {
+    position: static;
+  }
+  .mainWrapper {
+    flex-direction: column;
+    width: 665px;
+
+    align-items: flex-start;
+  }
+
+  .shadowBigScreen {
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: transparent;
+  }
+  .shadowSmallScreen {
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 665px;
+
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    background-color: var(--white-color);
+    box-shadow: 0 10px 60px rgba(170, 178, 197, 0.2);
+  }
+  .summaryHolder {
+    padding-left: 30px;
+  }
+  .form {
+    background-color: var(--white-color);
+    border-top-right-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mainWrapper {
+    width: 1060px;
+  }
+  .shadowBigScreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 83px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    background-color: var(--white-color);
+    box-shadow: 0 10px 60px rgba(170, 178, 197, 0.2);
+  }
+  .shadowSmallScreen {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 760px;
+
+    margin-bottom: 0;
+    padding: 0;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    box-shadow: none;
+  }
+  .summaryHolder {
+    padding-left: 0;
+  }
+}
+
+.form {
+  width: 100%;
+}
+
+/* section balance and goToReport */
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin-bottom: 40px;
+}
+
+.goToReport {
+  display: flex;
+  align-items: center;
+  color: var(--text-color-one);
+  margin-top: 37px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.reportPic {
+  width: 25px;
+  height: 25px;
+  margin-left: 14px;
+  padding-bottom: 3px;
+  fill: var(--text-color-four);
+}
+.goToReport:hover > .reportPic {
+  fill: var(--accent-color);
+}
+.goToReport:hover {
+  color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 58px;
+    justify-content: center;
+  }
+  .goToReport {
+    margin-left: 111px;
+    margin-top: 2px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-bottom: 9px;
+    padding-right: 85px;
+    justify-content: flex-end;
+  }
+  .goToReport {
+    margin-left: 205px;
+  }
+}
+
+.navBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
+  width: 50%;
+  height: 53px;
+
+  border: var(--bg-modal-one-colour) 1px solid;
+  color: black;
+}
+
+.navBtnActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 53px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.16;
+  border-color: transparent;
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .navBtn {
+    width: 138px;
+    height: 40px;
+    padding: 20px;
+
+    border-radius: 20px 20px 0 0;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: var(--active-tab-bg-color);
+  }
+
+  .navBtnActive {
+    width: 138px;
+    height: 40px;
+    padding: 20px;
+    border-color: transparent;
+    border-radius: 20px 20px 0 0;
+    background-color: #fefefe;
+    color: var(--accent-color);
+    cursor: pointer;
+  }
+}

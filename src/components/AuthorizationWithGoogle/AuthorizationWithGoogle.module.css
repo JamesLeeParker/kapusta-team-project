@@ -1,0 +1,28 @@
+.ButtonWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.ButtonGoogleAuth {
+  /* Геометрия */
+  width: 122px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  /* Текст */
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  /* Оформление */
+  box-shadow: 1px 2px 3px var(--box-shadow);
+  border-radius: 26px;
+  background-color: var(--form-bg-text-color);
+  cursor: pointer;
+  border: none;
+}
+.ButtonGoogleAuth:hover,
+.ButtonGoogleAuth:focus {
+  background-color: var(--accent-color);
+}

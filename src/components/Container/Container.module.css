@@ -1,0 +1,22 @@
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 26px;
+    padding-right: 26px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}

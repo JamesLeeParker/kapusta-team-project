@@ -1,0 +1,66 @@
+.section {
+  display: none;
+}
+.title {
+  background: var(--bg-modal-two-colour);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    width: 230px;
+    height: fit-content;
+    border: 2px solid #fff;
+  }
+  .list {
+    min-height: 240px;
+    background: var(--bg-modal-two-colour);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    margin-left: auto;
+  }
+}
+
+.title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 0.02;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 2px solid white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.item {
+  height: 38.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+
+.itemMonthSum {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-color-four);
+
+  padding-left: 20px;
+  padding-right: 20px;
+}

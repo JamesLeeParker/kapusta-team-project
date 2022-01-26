@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+  .backgroundImageBot {
+    position: absolute;
+    z-index: -99;
+    left: 497px;
+    top: 1090px;
+    width: 183px;
+    height: 142px;
+    background-image: url(../../images/background-bot-two-cabages.svg);
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .backgroundImageBot {
+    left: 10px;
+    top: 700px;
+    width: 1334px;
+    height: 232px;
+    background-image: url(../../images/background-top-cabages.svg);
+    transform: scaleY(1) rotate(-180deg);
+  }
+}

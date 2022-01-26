@@ -1,0 +1,12 @@
+.reportNavigation{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:768px) {
+    .reportNavigation{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 30px;
+        align-items:center;
+    }
+}

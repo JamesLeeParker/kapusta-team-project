@@ -1,0 +1,25 @@
+.reportNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.reportMain {
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  padding-top: 20px;
+  background-color: var(--white-color);
+}
+.reportArrow {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+.reportTitle {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}

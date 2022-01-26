@@ -1,0 +1,119 @@
+.HeroLogo {
+  /* Геометрия */
+  width: 183px;
+  margin-top: 85px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+.HeroTitle {
+  /* Геометрия */
+  margin-left: 60px;
+  margin-bottom: 50px;
+  /* Текст */
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-color-four);
+}
+.authWrapper {
+  /* Геометрия */
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 53px;
+  /* Оформление */
+  border-radius: 30px;
+  background-color: #ffffff;
+  box-shadow: 5px 10px 20px rgba(170, 178, 197, 0.4);
+}
+
+.authWithGoogleTitle {
+  /* Геометрия */
+  margin-bottom: 25px;
+  /* Текст */
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: var(--text-color-four);
+}
+
+.authWithEmailTitle {
+  /* Геометрия */
+  margin-bottom: 25px;
+  /* Текст */
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--text-color-four);
+}
+
+@media screen and (min-width: 768px) {
+  .HeroLogo {
+    /* Геометрия */
+    width: 305px;
+    margin-top: 90px;
+    margin-left: 125px;
+  }
+  .HeroTitle {
+    /* Геометрия */
+    margin-left: 178px;
+    margin-bottom: 50px;
+    /* Текст */
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .authWrapper {
+    /* Геометрия */
+    padding: 50px 85px;
+    margin: 0 125px;
+    margin-bottom: 190px;
+  }
+  .authWithGoogleTitle {
+    /* Геометрия */
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    /* Текст */
+    text-align: start;
+    /* Оформление */
+  }
+  .authWithEmailTitle {
+    /* Геометрия */
+    margin-bottom: 20px;
+    /* Текст */
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .WrapMainPage {
+    /* Геометрия */
+    display: flex;
+    padding-top: 115px;
+    margin-bottom: 140px;
+  }
+  .HeroWrap {
+    /* Геометрия */
+    margin-top: 215px;
+    margin-left: 230px;
+    margin-right: 125px;
+  }
+  .HeroLogo {
+    /* Геометрия */
+    width: 337px;
+    margin: 0;
+  }
+  .HeroTitle {
+    /* Геометрия */
+    margin: 0;
+    margin-left: 60px;
+  }
+  .authWrapper {
+    /* Геометрия */
+    max-width: 436px;
+    margin: 0;
+  }
+}
